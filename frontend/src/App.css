@@ -1,0 +1,128 @@
+:root {
+  --nf-primary: #2f5d50;
+  --nf-primary-dark: #244a40;
+  --nf-accent: #d9a441;
+  --nf-bg: #f7f6f2;
+  --nf-surface: #ffffff;
+  --nf-text: #1f2a24;
+  --nf-muted: #6b7a72;
+  --nf-border: #e2e0d8;
+  --nf-danger: #b3452c;
+  --nf-radius: 10px;
+}
+
+body {
+  background-color: var(--nf-bg);
+  color: var(--nf-text);
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.navbar-nf {
+  background-color: var(--nf-primary);
+}
+
+.navbar-nf .navbar-brand,
+.navbar-nf .nav-link {
+  color: #f2efe6 !important;
+  font-weight: 500;
+}
+
+.navbar-nf .nav-link:hover {
+  color: var(--nf-accent) !important;
+}
+
+.brand-mark {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.btn-nf-primary {
+  background-color: var(--nf-primary);
+  border-color: var(--nf-primary);
+  color: #fff;
+}
+
+.btn-nf-primary:hover {
+  background-color: var(--nf-primary-dark);
+  border-color: var(--nf-primary-dark);
+  color: #fff;
+}
+
+.btn-nf-accent {
+  background-color: var(--nf-accent);
+  border-color: var(--nf-accent);
+  color: #2b1f05;
+}
+
+.btn-nf-accent:hover {
+  background-color: #c8933a;
+  border-color: #c8933a;
+}
+
+.card-nf {
+  background-color: var(--nf-surface);
+  border: 1px solid var(--nf-border);
+  border-radius: var(--nf-radius);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.card-nf:hover {
+  box-shadow: 0 8px 20px rgba(31, 42, 36, 0.08);
+  transform: translateY(-2px);
+}
+
+.status-pill {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  text-transform: capitalize;
+}
+
+.status-pending {
+  background-color: #fbe9c9;
+  color: #8a5a00;
+}
+
+.status-approved,
+.status-confirmed {
+  background-color: #d9ead9;
+  color: #2c6b2f;
+}
+
+.status-rejected,
+.status-cancelled {
+  background-color: #f3d6cd;
+  color: var(--nf-danger);
+}
+
+.hero-search {
+  background-color: var(--nf-primary);
+  border-radius: var(--nf-radius);
+}
+
+.section-label {
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 0.75rem;
+  color: var(--nf-muted);
+  font-weight: 600;
+}
+
+a {
+  color: var(--nf-primary);
+}
+
+a:hover {
+  color: var(--nf-accent);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--nf-primary);
+  box-shadow: 0 0 0 0.2rem rgba(47, 93, 80, 0.15);
+}
+
+.spinner-border-nf {
+  color: var(--nf-primary);
+}

@@ -1,0 +1,18 @@
+# Ignore dependency folders in both frontend and backend
+backend/node_modules/
+frontend/node_modules/
+node_modules/
+
+# Ignore environment variables
+backend/.env
+frontend/.env
+.env
+.env.local
+
+# Ignore logs
+*debug.log*
+yarn-error.log*
+
+# OS specific files
+.DS_Store
+Thumbs.db
